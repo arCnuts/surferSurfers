@@ -26,10 +26,8 @@ public class PlayerBehaviour : MonoBehaviour
         {
             ++i;
             transform.Translate(Vector3.right * moveSpeed);
-        }    
+        }
     }
-
-
 
     void OnCollisionEnter(Collision collision) 
     {
