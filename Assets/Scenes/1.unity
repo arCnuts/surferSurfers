@@ -353,7 +353,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &280095327
 MonoBehaviour:
@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 563358300}
   - component: {fileID: 563358303}
   - component: {fileID: 563358302}
-  - component: {fileID: 563358301}
+  - component: {fileID: 563358304}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -401,30 +401,6 @@ Transform:
   m_Father: {fileID: 1593424237}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &563358301
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563358299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd6043bde05a7fc4cba197d06915c1e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Damping: {x: 2.28, y: 2, z: 0}
-  ShoulderOffset: {x: 0, y: 3, z: -7}
-  VerticalArmLength: 0.4
-  CameraSide: 1
-  CameraDistance: 0
-  CameraCollisionFilter:
-    serializedVersion: 2
-    m_Bits: 0
-  IgnoreTag: 
-  CameraRadius: 0.2
-  DampingIntoCollision: 0
-  DampingFromCollision: 2
 --- !u!114 &563358302
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -464,6 +440,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &563358304
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563358299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7155796051b734daa718462081dc5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BindingMode: 2
+  m_FollowOffset: {x: 0, y: 4.75, z: -7.01}
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_AngularDampingMode: 0
+  m_PitchDamping: 0
+  m_YawDamping: 0
+  m_RollDamping: 0
+  m_AngularDamping: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +652,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &762583143
 MonoBehaviour:
@@ -745,8 +743,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.22415602, y: 0, z: 0, w: 0.9745533}
-  m_LocalPosition: {x: 0, y: 3.4, z: -7}
+  m_LocalRotation: {x: 0.29338717, y: 0.000000011801289, z: -0.0000000036217254, w: 0.9559937}
+  m_LocalPosition: {x: 0, y: 4.75, z: -7.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -853,7 +851,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1351631764
 GameObject:
@@ -1011,7 +1009,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -1029,7 +1027,7 @@ RectTransform:
   m_Children:
   - {fileID: 1351631765}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1059,7 +1057,7 @@ PrefabInstance:
     - target: {fileID: 1954348839079362665, guid: 3c1abf0e2da63e0449325c1186997307,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1954348839079362665, guid: 3c1abf0e2da63e0449325c1186997307,
         type: 3}
@@ -1398,7 +1396,7 @@ GameObject:
   - component: {fileID: 1593424237}
   - component: {fileID: 1593424236}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: CineMachine Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1449,14 +1447,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593424235}
-  m_LocalRotation: {x: 0.22415602, y: 0, z: 0, w: 0.9745533}
-  m_LocalPosition: {x: 0, y: 3.4, z: -7}
+  m_LocalRotation: {x: 0.29338717, y: 0.000000011801289, z: -0.0000000036217254, w: 0.9559937}
+  m_LocalPosition: {x: 0, y: 4.75, z: -7.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 563358300}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622489327
 GameObject:
@@ -1606,7 +1604,6 @@ GameObject:
   - component: {fileID: 1631921239}
   - component: {fileID: 1631921243}
   - component: {fileID: 1631921244}
-  - component: {fileID: 1631921245}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1691,7 +1688,7 @@ Transform:
   m_Children:
   - {fileID: 1860274083}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1631921243
 MonoBehaviour:
@@ -1723,26 +1720,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!95 &1631921245
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631921238}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3c9ed6170ce6b8c4d83fb37d439fb8ee, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1860274082
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,7 +2044,7 @@ PrefabInstance:
     - target: {fileID: 1954348839079362665, guid: 3c1abf0e2da63e0449325c1186997307,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1954348839079362665, guid: 3c1abf0e2da63e0449325c1186997307,
         type: 3}
