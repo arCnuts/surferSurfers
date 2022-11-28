@@ -189,6 +189,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstaclePrefab1: {fileID: 6925272441238811722, guid: 078d477caf6b1d64b8673afd62c212bf,
     type: 3}
+  obstaclePrefab2: {fileID: 6925272441238811722, guid: 078d477caf6b1d64b8673afd62c212bf,
+    type: 3}
 --- !u!1001 &1389218958705224713
 PrefabInstance:
   m_ObjectHideFlags: 0

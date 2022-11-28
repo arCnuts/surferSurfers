@@ -11,6 +11,7 @@ public class GroundTile : MonoBehaviour
     {
         groundSpawner = GameObject.FindObjectOfType<GroundSpawner>();
         SpawnObstacle();
+        SpawnObstacle2();
 
 
         
@@ -30,6 +31,7 @@ public class GroundTile : MonoBehaviour
         
     }
     public GameObject obstaclePrefab1;
+    public GameObject obstaclePrefab2;
     
     
     void SpawnObstacle ()
@@ -39,9 +41,23 @@ public class GroundTile : MonoBehaviour
         
         Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
         
-            Instantiate(obstaclePrefab1, spawnPoint.position, Quaternion.identity, transform);
+        Instantiate(obstaclePrefab2, spawnPoint.position, Quaternion.identity, transform);
        
         //zespawnowac obiekt w danym miejscu
+
+    
+    }
+        void SpawnObstacle2 ()
+    {   
+        
+        int obstacleSpawnIndex = Random.Range(2, 5);
+        
+        Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
+        
+        Instantiate(obstaclePrefab1, spawnPoint.position, Quaternion.identity, transform);
+            
+       
+        
 
     
     }
