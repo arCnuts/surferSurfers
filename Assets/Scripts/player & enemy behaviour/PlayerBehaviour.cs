@@ -7,9 +7,10 @@ public class PlayerBehaviour : MonoBehaviour
     private int i;
     public float forwardSpeed;
     public float moveSpeed;
-
+    
     void Start()
     {
+        
     }
 
     void Update()
@@ -27,7 +28,11 @@ public class PlayerBehaviour : MonoBehaviour
             ++i;
             transform.Translate(Vector3.right * moveSpeed);
         }
-    }
+
+            
+        }
+              
+    
 
     void OnCollisionEnter(Collision collision) 
     {
@@ -37,4 +42,10 @@ public class PlayerBehaviour : MonoBehaviour
             i =+ 0;
         }
     }
+
+
+ 
+     
+     
+
 }
