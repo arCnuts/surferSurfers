@@ -173,7 +173,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 14.6, y: 10, z: 10}
+  m_Size: {x: 15, y: 10, z: 10}
   m_Center: {x: 0, y: 0, z: 5}
 --- !u!114 &3531682576061188087
 MonoBehaviour:
@@ -187,9 +187,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9a3818973ab1b45a942d4fc8b0b7b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstaclePrefab1: {fileID: 6925272441238811722, guid: 078d477caf6b1d64b8673afd62c212bf,
-    type: 3}
-  obstaclePrefab2: {fileID: 6925272441238811722, guid: 078d477caf6b1d64b8673afd62c212bf,
+  prefabs:
+  - {fileID: 6925272441238811722, guid: 078d477caf6b1d64b8673afd62c212bf, type: 3}
+  - {fileID: 5759211088341537876, guid: 17ddc211ca582554fb91e839d443bac3, type: 3}
+  obstaclePrefab: {fileID: 6925272441238811722, guid: 078d477caf6b1d64b8673afd62c212bf,
     type: 3}
 --- !u!1001 &1389218958705224713
 PrefabInstance:
