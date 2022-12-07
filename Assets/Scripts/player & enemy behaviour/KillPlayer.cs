@@ -1,3 +1,7 @@
+using System.Threading;
+using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,13 +10,24 @@ using UnityEngine.SceneManagement;
 public class KillPlayer : MonoBehaviour
 {
     public int GameOverScreen;
+    public float delay = 1f;
 
-    void OnTriggerEnter(Collider other){
-        if(other.CompareTag("Player"))
+    
+     
+  void OnTriggerEnter(Collider other)
         {
-            SceneManager.LoadScene(GameOverScreen);
+            
+            FindObjectOfType<AudioManager>().Play("boatcrash");
+            if(other.CompareTag("Player"))
+            {   
+                StartCoroutine(Timedelay());
+            }
         }
+    IEnumerator Timedelay()
+    {
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(GameOverScreen);
     }
-    
-    
+
 }

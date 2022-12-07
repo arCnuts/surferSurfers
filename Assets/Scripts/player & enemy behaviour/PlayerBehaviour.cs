@@ -8,6 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
     public float forwardSpeed;
     public float moveSpeed;
     public float maxSpeed;
+     
     
     void Start()
     {
@@ -35,28 +36,6 @@ public class PlayerBehaviour : MonoBehaviour
             transform.Translate(Vector3.right * moveSpeed);
         }
         
-            
-
-        
-        
-
-            
         }
-              
-    
-
-    void OnCollisionEnter(Collision collision) 
-    {
-        if(collision.gameObject.tag == "obstacle")
-        {
-            gameObject.transform.position = Vector3.zero;
-            i =+ 0;
-        }
-    }
-
-
- 
-     
-     
-
+            
 }
