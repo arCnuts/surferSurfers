@@ -16,18 +16,7 @@ public class KillPlayer : MonoBehaviour
      
   void OnTriggerEnter(Collider other)
         {
-            
             FindObjectOfType<AudioManager>().Play("boatcrash");
-            if(other.CompareTag("Player"))
-            {   
-                StartCoroutine(Timedelay());
-            }
+            PlayerManager.gameOver = true;
         }
-    IEnumerator Timedelay()
-    {
-        yield return new WaitForSeconds(1);
-
-        SceneManager.LoadScene(GameOverScreen);
-    }
-
 }

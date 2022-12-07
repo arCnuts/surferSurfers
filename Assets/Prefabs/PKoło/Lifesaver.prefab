@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4756469881444443170}
   m_Layer: 0
   m_Name: Lifesaver
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,3 +111,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameOverScreen: 2
+  delay: 1
