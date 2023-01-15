@@ -37,9 +37,9 @@ public class PlayerBehaviour : MonoBehaviour
             transform.Translate(Vector3.right * moveSpeed);
         }
         
-        }
+    }
             
-        }
+}
                 
             
 
