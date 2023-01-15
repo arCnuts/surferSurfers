@@ -17,7 +17,7 @@ public class Score : MonoBehaviour
     }
     void Update()
     {
-        scoreText.text = "Score:" + (int)scoreAmount;
+        scoreText.text = $"{(int)scoreAmount}";
         scoreAmount += pointIncreasePerSecond * Time.deltaTime;
     }
 }

@@ -11,6 +11,7 @@ public class TileManager : MonoBehaviour
     [SerializeField]public int numberOfTiles = 45;
     public Transform playerTransform;
     private List<GameObject> activeTiles = new List<GameObject>();
+    public float xSpawn = 0;
     
     
     void Start()
@@ -34,7 +35,8 @@ public class TileManager : MonoBehaviour
     public void SpawnTile( int tileIndex)
     {
 
-        GameObject go = Instantiate(Prefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        //GameObject go = Instantiate(Prefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        GameObject go = Instantiate(Prefabs[tileIndex], new Vector3(xSpawn,0,zSpawn) , transform.rotation);
         activeTiles.Add(go);
         zSpawn += tileLength;
 }
