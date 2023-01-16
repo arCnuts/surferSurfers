@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.61454487, g: 0.75157005, b: 0.8694438, a: 1}
+  m_IndirectSpecularColor: {r: 0.61454487, g: 0.75157017, b: 0.86944425, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2326,6 +2326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6783618f13c8624285709e708d9aa76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PauseMenuUI: {fileID: 1351631764}
 --- !u!1 &1474983132
 GameObject:
   m_ObjectHideFlags: 0
@@ -3772,6 +3773,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987414225}
   m_Mesh: {fileID: -8692500390113518110, guid: a6eb9234ad450ef408136ae4d8a092fb, type: 3}
+--- !u!1 &2017845070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8902178530672064812, guid: f5997cd5d9c0948458d8c4e91fac4df1,
+    type: 3}
+  m_PrefabInstance: {fileID: 7527194732734976386}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2051058724
 GameObject:
   m_ObjectHideFlags: 0
@@ -4056,6 +4063,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7527194732734976386}
   m_PrefabAsset: {fileID: 0}
+--- !u!218 &1780262308526518805
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2017845070}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 0}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 5
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 80
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_StaticShadowCaster: 0
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 0}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ScaleInLightmap: 1
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 0
 --- !u!1001 &4167405675230276225
 PrefabInstance:
   m_ObjectHideFlags: 0
